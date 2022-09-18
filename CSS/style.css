@@ -11,6 +11,8 @@
     --cor-branco:  #f9fafc;
     --cor-preto:   #0b090a;
     --cor-amarelo: #fae60a;
+    --cor-azul:    #011f73;
+
 }
 
 /* Start body */
@@ -23,39 +25,44 @@ body{
 /* Start Header */
 #header_container{
     background-color: var(--cor-preto);
-    height: 90px;
+    height: 80px;
+    border-bottom: 2px solid var(--cor-branco);
     display:flex;
-    flex-direction:row;
+    flex-direction:column;
     justify-content:center;
     align-items: center;
-    border-bottom: 2px solid #f9fafc;
+    
 }
 
-/* Start barra de navegação */
-.nav_container{
+/* Menu */
+#header_container #menu{
+    width: 90%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 90%;
     align-items: center;
 }
 
-/* Lista */
-ul {
+/* Lista contendo links */
+#header_container #menu #menu_links{
+    width: 40%;
+    height: 70%;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
-    width: 50%;
+    align-items: center;
+    padding: 20px 20px;
+    /*border: 1px solid var(--cor-branco);*/
 }
 
-/* Icones na lista */
-li {
-    list-style-type: none;
+#header_container #menu #menu_links li{
+    list-style: none;
+    /*border: 1px solid var(--cor-branco);*/
 }
 
-/* Links */
-a {
-    color: white;
+#header_container #menu #menu_links li .link {
+    color: var(--cor-branco);
     text-decoration: none;
     font-size: 15px;
 }
@@ -64,31 +71,40 @@ a {
     font-size: 13px;
 }
 
-a:hover{
-    color: #fae60a;
+#header_container #menu #menu_links li .link:hover{
+    color: var(--cor-amarelo);
     transition: 0.5s;
 }
 
-.icons{
-    width: 160px;
+/* Icones */
+#header_container #menu #menu_icons{
+    width: 15%;
+    height: 70%;
     display: flex;
-    align-items: center;
     justify-content:space-around;
-    height: 70px;
-  
+    align-items: center;
+    /*border: 1px solid var(--cor-branco);*/
 }
 
-.icon{
-    padding-top: 9px;
-    border: 2px solid white;
-    text-align:center;
+#header_container #menu #menu_icons .icon_img .icon{
+    color: var(--cor-branco);
     width: 38px;
     height: 38px;
-    font-size: 18px;
-    align-items: center;
-    border-radius: 50px;
+    font-size: 20px;
+    text-align:center;
+    /*align-items: center;*/
+    padding-top:22%;
+    border-radius: 50%;
+    border: 1px solid var(--cor-branco);
 }
 
+#header_container #menu #menu_icons .icon_img .icon:hover{
+    /*color: var(--cor-preto);*/
+    /*border: 2px solid var(--cor-azul);*/
+    font-size: 23px;
+    text-align: center;
+    padding: 20%;
+}
 .fa-facebook-f:hover{
     background-color: #457b9d;
     transition: 0.5s;
@@ -118,7 +134,7 @@ a:hover{
     transition: 0.5s;
 }
 
-
+/* Continue */
 #conteudo-container{
     width: 90%;
     height: 600px;
