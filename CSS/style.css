@@ -20,7 +20,7 @@
 }
 body{
     font-size: 100%;
-    background-image: url(../IMG/37.jpg);
+    background-image: url(../IMG/40.jpg);
     background-size: cover;
 }
 #cabecalho-container{
@@ -33,7 +33,7 @@ body{
     gap: 400px;
     flex-wrap: nowrap;
     margin-bottom: 20px;
-    border-bottom: 2px solid var(--cor-branco);
+    border-bottom: 2px solid var(--cor-dourado);
 }
 #cabecalho-container #links{
     width: 30%;
@@ -122,10 +122,9 @@ hr {
     color: var(--cor-branco);
     background-color: var(--cor-preto);
     height: 70px;
-    border-top: 2px solid var(--cor-branco);
     display:flex;
-    flex-direction:column;
     justify-content:center;
     align-items: center;
     margin-top: 20px;
+    border-top: 2px solid var(--cor-dourado);
 }
